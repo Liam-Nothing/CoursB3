@@ -92,7 +92,18 @@ footer {
 }
 
 
+
 /*********************************************************************************/
+
+
+#language>ul {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px;
+}
 
 #methodo>ul {
     display: grid;
