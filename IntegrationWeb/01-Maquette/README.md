@@ -12,6 +12,6 @@
 ## Play & Learn
 
 - [x] [Flukeout](https://flukeout.github.io/) (32/32)
-- [ ] [Froggy](https://flexboxfroggy.com/#fr) (0/0)
+- [x] [Froggy](https://flexboxfroggy.com/#fr) (24/24)
 - [ ] [FlexTowerDefense](http://www.flexboxdefense.com/) (3/0)
 - [ ] [FlexZombie](https://mastery.games/flexboxzombies/) (0/0)
