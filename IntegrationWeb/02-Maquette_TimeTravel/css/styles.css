@@ -1,0 +1,145 @@
+/* To disable blank at the to of the page */
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/*********************************************************************************/
+
+/* Page with footer at bottom */
+
+body {
+    position: relative;
+    min-height: 100vh;
+    transition: 0.2s;
+    background-color: #ffffff;
+}
+
+main {
+    padding-bottom: 5.5rem;
+}
+
+/*********************************************************************************/
+
+/* Grid system */
+
+@media (min-width:993px) {
+    #abonnements>div {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    #abonnements>div>article:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+    #abonnements>div>article:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+    #abonnements>div>article:nth-child(3) { grid-area: 1 / 3 / 2 / 4; }
+}
+
+@media (max-width:992px) and (min-width:691px) {
+    #abonnements>div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #abonnements>div>article:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+    #abonnements>div>article:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+    #abonnements>div>article:nth-child(3) { grid-area: 2 / 1 / 3 / 2; }
+}
+
+@media (max-width: 690px) {
+    #abonnements>div {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr); 
+    }
+    #abonnements>div>article:nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+    #abonnements>div>article:nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
+    #abonnements>div>article:nth-child(3) { grid-area: 3 / 1 / 4 / 2; }
+}
+
+
+
+/*********************************************************************************/
+
+article>h4::after {
+    content: "euros/mois";
+    font-weight: 100;
+    font-size: 10px;
+    color: black;
+}
+
+#abonnements>div {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px;
+}
+
+article {
+    border: darkorange 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+article>h4 {
+    color: darkorange;
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+article>h5 {
+    font-size: 20px;
+}
+
+article>hr {
+    margin: 20px 0;
+}
+
+header {
+    background-image:
+    url('../img/pyramides.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    background-position: 0% 40%;
+    padding: 100px 0;
+}
+
+header h1, header h2 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+header h2 {
+    font-size: 15px;
+}
+
+nav>ul>li {
+    display: grid;
+    list-style-type: none;
+}
+
+header * {
+    max-width: 90%;
+    margin: auto;
+}
+
+nav a{
+    color: #ffffff;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul {
+    text-align: center;
+    margin: auto;
+    padding: 20px 0;
+}
