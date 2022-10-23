@@ -1,4 +1,160 @@
-/* Temp */
+/* Page with footer at bottom */
+
 body {
-	background-color: #ff0000;
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 5.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*********************************************************************************/
+
+
+/* Global */
+
+h2 {
+    text-transform: uppercase
+}
+
+
+/* Nav bar */
+
+header>nav {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+header>nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+header>nav li {
+    float: right;
+}
+
+header>nav li a {
+    display: block;
+    color: white !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header>nav>ul>li img {
+    height: 70px
+}
+
+header>nav>ul>li:first-child {
+    float: left;
+}
+
+header>h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 7px;
+    font-size: 50px;
+}
+
+/* Header */
+
+header {
+    background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url('../img/detoxcuresmoothie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    background-position: 0% 40%;
+}
+
+header h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 200px 0;
+}
+
+/* Fist section */
+
+main>section:nth-child(1) { 
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 30px auto;
+}
+
+main>section:nth-child(1) article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main>section:nth-child(1) article>h2 {
+    text-align: center;
+}
+
+main>section:nth-child(1) img { 
+    height: 400px;
+    margin-right: 60px;
+}
+
+/* Second section */
+
+main>section:nth-child(2) { 
+    background: linear-gradient(to bottom, rgb(254, 180, 194), rgb(244, 155, 33));
+    padding: 40px 0px;
+    text-align: center;
+    color: white;
+}
+
+main>section:nth-child(2) h2 { 
+    padding: 20px;
+}
+
+main>section:nth-child(2) article { 
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Third section */
+
+main>section:nth-child(3) { 
+    text-align: center;
+}
+
+main>section:nth-child(3) div { 
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main>section:nth-child(3) article { 
+    width: 300px;
+}
+
+/* Footer */
+
+footer {
+    background: rgb(244, 155, 33);
+    color: white;
+    text-align: center;
 }
