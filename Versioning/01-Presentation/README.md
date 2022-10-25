@@ -1,6 +1,6 @@
 # Presentation
 
-*Envoyer à Mndbpro@gmail.com*
+*Envoyer à mnbdpro@gmail.com*
 
 ## Qui je suis
 
