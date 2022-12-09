@@ -5,3 +5,11 @@
 - Apache
 - MySql
 - Php
+
+# 26/10/2022
+
+Version : X.Y.Z
+
+X = Majeur
+Y = Mineur
+Z = Patch
